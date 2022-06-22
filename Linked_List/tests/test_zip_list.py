@@ -11,4 +11,4 @@ def test_zip_lists():
     list2.insert(3)
     list2.insert(4)
 
-    assert zip_lists(list1, list2).to_string()==  "{2}  ->{4}  ->{1}  ->{3}  -> NULL"
+    assert zip_lists(list1, list2).to_string()==  " 2  -> 4  -> 1  -> 3  -> NULL"
