@@ -4,7 +4,7 @@ The most important data structure in the world!
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-
+![img](insertafter.jpg)
 
 
 ## Approach & Efficiency
