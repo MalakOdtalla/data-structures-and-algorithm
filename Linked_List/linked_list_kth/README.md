@@ -11,7 +11,7 @@ The most important data structure in the world!
 The Big O for the used method:
 
 - kth_from_end: O(n)
-
+  
 
 ## Solution
 
