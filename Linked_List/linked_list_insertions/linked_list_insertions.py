@@ -84,7 +84,7 @@ class LinkedList:
             if self.head.value == value:
                 node = self.head
                 self.head = new_node
-                new_node.next = node
+                new_node.next = node  
                 return True
             else:
                 current = self.head
