@@ -46,11 +46,15 @@ class LinkedList:
         return list_str
 
 
+
+
+
+
 if __name__ == '__main__':
     list = LinkedList()
-    list.insert(5)#
+    list.insert(5)
     list.insert(9)
-
+    list.insert(5)
 
 
 

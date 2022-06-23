@@ -67,7 +67,7 @@ class LinkedList:
                 new_value = Node(new_value)
                 new_value.next = current.next
                 current.next = new_value
-               # self._len += 1
+
                 return True
 
             current = current.next
