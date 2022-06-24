@@ -5,7 +5,7 @@ The most important data structure in the world!
 <!-- Embedded whiteboard image -->
 
 ![img](end from kth.jpg)
-
+    
 
 ## Approach & Efficiency
 The Big O for the used method:
