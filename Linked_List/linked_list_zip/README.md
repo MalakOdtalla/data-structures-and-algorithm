@@ -4,13 +4,15 @@ The most important data structure in the world!
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![img](zip_list.jpg)
+![img](zip-list.jpg)
 
 
 ## Approach & Efficiency
 The Big O for the used method:
 
-- kth_from_end: O(1)
+- Big O (space): O(1)
+- Big O (time): O(n)
+
 
 
 ## Solution
