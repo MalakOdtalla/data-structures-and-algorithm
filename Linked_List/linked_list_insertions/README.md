@@ -11,7 +11,7 @@ The most important data structure in the world!
 The Big O for each method used:
 
 - append: O(1)
-- insert after: O(1)
+- insert after: O(1) 
 - insert before: O(1)
 
 ## Solution

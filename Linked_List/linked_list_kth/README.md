@@ -4,14 +4,14 @@ The most important data structure in the world!
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-
+![img](end from kth.jpg)
 
 
 ## Approach & Efficiency
 The Big O for the used method:
 
 - kth_from_end: O(n)
-
+  
 
 ## Solution
 
