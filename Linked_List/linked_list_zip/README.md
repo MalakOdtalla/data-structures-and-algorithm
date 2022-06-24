@@ -17,3 +17,4 @@ The Big O for the used method:
 
 I created a method called zip lists and used the features that created in linked list class, 
 The method takes two  argument: linked list 1, linked list2, and return the merged or zipped linked list.
+ 
