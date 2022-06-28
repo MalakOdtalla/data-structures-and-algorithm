@@ -9,6 +9,8 @@
 | [linked_list_zip](Linked_List/linked_list_zip/README.md)               |
 | [stack_and_queue](stack_and_queue/README.md)                           |
 | [stack_queue_pseudo](stack_queue_pseudo/README.md)                     |
+| [stack_queue_animal_shelter](stack_queue_animal_shelter/README.md)                     |
+
 
 
 
