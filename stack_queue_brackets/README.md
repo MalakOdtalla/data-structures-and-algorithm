@@ -9,7 +9,7 @@ the efficiency for this approch:
 
 Big O:
 
-Time: O(n)
+Time: O(n)  
 Space: O(n)
 
 
