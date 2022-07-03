@@ -108,3 +108,4 @@ if __name__ == "__main__":
      Tree.add(9)
 
      print(Tree.contains(9))
+
