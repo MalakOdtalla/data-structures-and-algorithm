@@ -108,3 +108,7 @@ if __name__ == "__main__":
      Tree.add(9)
 
      print(Tree.contains(9))
+
+def test_empty_binary_tree():
+    tree = BinaryTree()
+    assert tree.root == None

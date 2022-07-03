@@ -1,3 +1,4 @@
+
 from trees.trees.trees import BinaryTree,BinarySearchTree,Node
 
 import pytest
@@ -12,15 +13,17 @@ def test_single_root():
     tree.root = Node(1)
     assert tree.root.value == 1
 
-def test_leftchild_rightchild():
-    tree = BinaryTree()
-    tree.root =Node(1)
-    tree.root.left =Node(2)
-    tree.root.right = Node(3)
-    assert tree.root.value ==1
-    assert tree.root.left.value ==2
-    assert tree.root.right.value ==3
-    assert tree.pre_order() ==[1, 2,3]
+def test_left_right():
+    tree = BinarySearchTree()
+    tree.add(2)
+    tree.add(1)
+    tree.add(3)
+    right = tree.root.right.value
+    expected_right = 3
+    left = tree.root.left.value
+    expected_left = 1
+    assert right == expected_right
+    assert left == expected_left
 
 
 @pytest.fixture
@@ -50,4 +53,12 @@ def test_post_order(check):
     assert actual == expected
 
 
+def test_contains():
+    tree = BinarySearchTree()
+    tree.add(1)
+    tree.add(2)
+    tree.add(3)
+    actual = tree.contains(2)
+    expected = True
+    assert actual ==expected
 
