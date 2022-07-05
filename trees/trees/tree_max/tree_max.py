@@ -50,7 +50,7 @@ class BinaryTree:
         return output
 
     def max_tree(self):
-
+        """func without any arguments that depends on recurrsion to return maximum value stored in the tree."""
         if not self.root:
             return 'Tree is Empty'
 

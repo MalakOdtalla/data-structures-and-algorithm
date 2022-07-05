@@ -1,11 +1,15 @@
 # Challenge Summary
-<!-- Description of the challenge -->
-
+create func without any arguments that  returns the maximaun number in the tree
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+
+![pic](max-tree.jpg)
+
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I used recursion to check the tree values and return the maxuimum value.
+
+- Big O : O(log(n))
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+Inside Binary tree class I create func that find the max value stored in the tree, depending on the recursion
