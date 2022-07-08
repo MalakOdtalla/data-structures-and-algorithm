@@ -48,15 +48,15 @@ class BinaryTree:
         walk(self.root)
         return output
 
-    def breadth_first(self, tre):
-
+    def breadth_first(self, tree):
+            '''  method takes binary tree as argument and return a list of all values in the tree, in the order they were encountered'''
             queue = []
             result = []
-            if not tre:
+            if not tree:
                 return 'Tree is empty'
             else:
-                if tre:
-                    queue.append(tre)
+                if tree:
+                    queue.append(tree)
                 while queue:
                     current = queue.pop(0)
                     result.append(current.value)
@@ -77,6 +77,7 @@ if __name__ == "__main__":
      tree.root.right.left = Node(4)
      tree.root.left.left = Node(5)
      tree.root.right.right = Node(6)
+     print(tree.in_order())
      print(tree.pre_order())
 
-     print(tree.breadth_first())
+     print(tree.breadth_first(tree.root))
