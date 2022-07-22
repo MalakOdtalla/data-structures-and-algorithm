@@ -1,49 +1,43 @@
-from trees.trees.trees import BinaryTree,Node
-from trees.trees.tree_breadth_first.tree_breadth_first import BinaryTree
 
-def fizz_buzz(value):
-    """
-    Function to do the fizz_buzz on the given value
-
-    """
-    if value % 3 == 0 and value % 5 == 0:
-        return "FizzBuzz"
-    if value % 3 == 0:
-        return "Fizz"
-    if value % 5 == 0:
-        return "Buzz"
-    else:
-        return str(value)
+class Node:
+    def __init__(self, value=None):
+        self.value = value
+        self.child  = []
 
 
-def fizz_buzz_tree(tree):
-        """
-        Function to change all values in the given tree according to fizz_buzz
-
-        """
-
-        new_tree = BinaryTree()
-        if not tree.root:
-            return new_tree
-
-        def _walk(current):
-            """
-             function to use in recursion to add new values in the new_tree according to their positions in the tree
-            """
-            node = Node(fizz_buzz(current.value))
-            if current.left:
-                node.left = _walk(current.left)
-            if current.right:
-                node.right = _walk(current.right)
-            return node
-        new_tree.root = _walk(tree.root)
-
-        return new_tree
+class kTree:
+    def __init__(self, root=None):
+        self.root = root
+    def show_all_vals(self):
+        all_values = []
+        def check_values(node):
+            all_values.append(node.value)
+            if node.child:
+                for child in node.child:
+                    check_values(child)
+        check_values(self.root)
+        return all_values
 
 
+def fizz_buzz_tree(kTree):
+    def _walk(node):
+        if node.child :
+            for i in node.child :
+                node.value = str(node.value)
+                if i.value % 3 == 0 and i.value % 5 == 0:
+                    i.value = "FizzBuzz"
+                elif i.value % 3 == 0:
+                    i.value = "Fizz"
+                elif i.value % 5 == 0:
+                    i.value = "Buzz"
+                else:
+                    i.value = str(i.value)
+
+    _walk(kTree.root)
+    return(kTree)
 
 if __name__ == "__main__":
-    tree = BinaryTree()
+    tree = kTree()
     tree.root = Node(2)
     tree.root.left = Node(10)
     tree.root.right = Node(15)
@@ -55,6 +49,4 @@ if __name__ == "__main__":
 
 
     new = fizz_buzz_tree(tree)
-    print(tree.breadth_first(new.root))
-
-
+    print(new)
