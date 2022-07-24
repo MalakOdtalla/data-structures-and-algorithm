@@ -8,7 +8,7 @@ class Node:
 class kTree:
     def __init__(self, root=None):
         self.root = root
-    def show_all_vals(self):
+    def show_all_values(self):
         all_values = []
         def check_values(node):
             all_values.append(node.value)
