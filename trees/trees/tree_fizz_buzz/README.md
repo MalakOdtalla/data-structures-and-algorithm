@@ -11,7 +11,7 @@ If the value is not divisible by 3 or 5, simply turn the number into a String.
 
 
 ## Whiteboard Process
-![pic](tree-fizz-buzz.jpg)
+![pic](fizz-buzz-tree.jpg)
 ## Approach & Efficiency
 I take reursion approach, to solve this challenge with :
 
