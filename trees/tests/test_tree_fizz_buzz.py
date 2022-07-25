@@ -1,9 +1,7 @@
-from trees.trees.trees import BinaryTree,Node
-from trees.trees.tree_breadth_first.tree_breadth_first import BinaryTree
-from trees.trees.tree_fizz_buzz.tree_fizz_buzz import fizz_buzz_tree
+from trees.tree_fizz_buzz.tree_fizz_buzz import fizz_buzz_tree,Node,kTree
 
 def test_fizz_buz():
-    tree = BinaryTree()
+    tree = kTree()
     tree.root = Node(2)
     tree.root.left = Node(10)
     tree.root.right = Node(15)
@@ -13,6 +11,6 @@ def test_fizz_buz():
     tree.root.right.left = Node(4)
 
     new = fizz_buzz_tree(tree)
-    assert tree.breadth_first(new.root) == ['2', 'Buzz', 'FizzBuzz', 'Buzz', 'Fizz', '4', 'Fizz']
+    assert new == ['2', 'Buzz', 'FizzBuzz', 'Buzz', 'Fizz', '4', 'Fizz']
 
 
