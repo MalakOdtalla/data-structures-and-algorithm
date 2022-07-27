@@ -15,7 +15,8 @@
 | [Tree-max](trees/trees/tree_max/README.md)                             |
 | [Tree-breadth-first](trees/trees/tree_breadth_first/README.md)         |
 | [Tree-fizz-buzz](trees/trees/tree_fizz_buzz/README.md)                 |
-| [Insertion-sort](Insertion_Sort/README.md)                 |
+| [Insertion-sort](Insertion_Sort/README.md)                             |
+| [Merge-sort](Merge_sort/README.md)                                 |
 
 
 
