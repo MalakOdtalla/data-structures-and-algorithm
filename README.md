@@ -18,7 +18,7 @@
 | [Insertion-sort](Insertion_Sort/README.md)                             |
 | [Merge-sort](Merge_sort/README.md)                                     |
 | [Quick-sort](Quick_sort/README.md)                                     |
-| [HashTable](Hashtable/README.md)                                      |
+| [HashTable](Hashtable/README.md)                                       |
 
 
 
