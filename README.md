@@ -19,7 +19,7 @@
 | [Merge-sort](Merge_sort/README.md)                                     |
 | [Quick-sort](Quick_sort/README.md)                                     |
 | [HashTable](Hashtable/README.md)                                       |
-
+| [hashmap_repeated_word](hashmap_repeated_word/README.md)                                       |
 
 
 
