@@ -2,6 +2,10 @@ from trees.trees.trees import Node,BinaryTree
 
 from tree_intersection import tree_intetsaction
 
+def test_empty_tree():
+    tree1=BinaryTree()
+    tree2 = BinaryTree()
+    assert tree_intetsaction(tree1,tree2) == []
 
 def test_tree_intetsaction():
     tree1=BinaryTree()
