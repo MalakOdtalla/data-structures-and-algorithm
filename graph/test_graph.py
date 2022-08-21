@@ -24,14 +24,32 @@ def test_retrieve_nodes():
 
     graph.add_node('a')
     graph.add_node('b')
+    actual=graph.get_nodes()
 
-    assert graph.get_nodes() == ['a','b']
+    assert actual == ['a','b']
 
 # All appropriate neighbors can be retrieved from the graph
 
+def test_retrieve_neighbors():
+    graph = Graph()
+    a = graph.add_node('a')
+    b = graph.add_node('b')
+    c = graph.add_node('c')
 
+    graph.add_edge(a, b)
+    actual = len(graph.get_neighbors(a))
+    expected = 1
+    assert actual == expected
 
 # Neighbors are returned with the weight between nodes included
+def test_retrieve_neighbors_with_weight():
+    graph = Graph()
+    a = graph.add_node('a')
+    b = graph.add_node('b')
+    c = graph.add_node('c')
+    graph.add_edge(a , b , 2)
+    graph.add_edge(a , c , 9)
+    assert graph.get_neighbors(a) == [(b , 2) , (c , 9)]
 
 
 # The proper size is returned, representing the number of nodes in the graph
@@ -43,7 +61,11 @@ def test_get_size():
     assert graph.size() == 2
 
 # A graph with only one node and edge can be properly returned
-
+def test_graph_one_node():
+    graph = Graph()
+    a = graph.add_node('a')
+    graph.add_edge(a, a)
+    assert graph.get_nodes() == [(a)]
 
 # An empty graph properly returns null
 
