@@ -59,13 +59,13 @@ class Graph:
     def get_neighbors(self, ver):
         return self.__adj_list.get(ver, [])
 
-    def breadth_first(self, start_vertex):
+    def breadth_first(self, Node):
         result = []
         visted = set()
         q = Queue()
 
-        q.enqueue(start_vertex)
-        visted.add(start_vertex)
+        q.enqueue(Node)
+        visted.add(Node)
 
         while len(q):
             current_vertex = q.dequeue()
@@ -81,6 +81,10 @@ class Graph:
                     visted.add(neighbor)
 
         return result
+
+
+
+
 
 
 if __name__ == "__main__":
@@ -100,4 +104,4 @@ if __name__ == "__main__":
     g.add_edge(e, d)
     g.add_edge(e, c)
 
-    print(g.get_neighbors(a))
+    print(g.breadth_first(a))
