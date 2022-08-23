@@ -73,6 +73,14 @@ def test_empty_graph():
     graph = Graph()
     assert graph.get_nodes() == []
 
+def test_breadth_first_single_value():
+  graph = Graph()
+  a = graph.add_node('a')
+  assert graph.breadth_first(a) == ['a']
 
 
+def test_breadth_first():
+    graph = Graph()
+    a = graph.add_node('a')
+    assert graph.breadth_first(a) == ['a']
 

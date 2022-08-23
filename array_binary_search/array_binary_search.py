@@ -13,4 +13,4 @@ def BinarySearch(list, key):
 			return mid
 	return -1
 
-print(BinarySearch([1, 3, 5, 8],9))
+print(BinarySearch([1, 3, 5, 8],8))
