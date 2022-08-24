@@ -82,5 +82,10 @@ def test_breadth_first_single_value():
 def test_breadth_first():
     graph = Graph()
     a = graph.add_node('a')
-    assert graph.breadth_first(a) == ['a']
+    b = graph.add_node('b')
+    c = graph.add_node('c')
+    graph.add_edge(a, b)
+    graph.add_edge(b, a)
+    graph.add_edge(b, c)
+    assert graph.breadth_first(a) == ['a','b','c']
 
