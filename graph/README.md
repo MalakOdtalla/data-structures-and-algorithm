@@ -1,13 +1,13 @@
 # Graphs
 A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph
 ## Challenge
-Create graph by implement it as an adjacency list
+
+![pic](breadthFirst.jpg)
 ## Approach & Efficiency
-Implement the graph, and should include the following methods: add_node(), add_edge(), get_nodes(), get_neighbors(), size().
 
-with efficiency for each method:
+ efficiency for breadth first:
 
-Big O >> O(1) for space and time
+Big O >> O(n) for space and time
 ## API
 Methods that include in graph class:
 
@@ -16,3 +16,4 @@ Methods that include in graph class:
 - GetNodes() Returns all of the nodes in the graph as a collection (set, list, or similar)
 - GetNeighbors() Returns a collection of edges connected to the given node Takes in a given node Include the weight of the connection in the returned collection
 - Size() Returns the total number of nodes in the graph
+- breadth first ()  takes node as arguments and return  a collection of nodes that visited in the graph
