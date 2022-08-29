@@ -1,4 +1,5 @@
 from collections import deque
+from stack_and_queue.stack_and_queue.Stack import Stack
 
 
 class Queue:
@@ -82,6 +83,33 @@ class Graph:
 
         return result
 
+    def Depth_first(self,starting_vertex):
+
+        vertices = []
+        depth = Stack()
+
+        if starting_vertex not in self.__adj_list:
+            return "error"
+
+        depth.push(starting_vertex)
+
+        while not depth.is_empty():
+            top_vertex = depth.pop()
+            vertices.append(top_vertex.value)
+            top_node_neighbors = self.get_neighbors(top_vertex)
+
+            for neighbor in top_node_neighbors[::-1]:
+                if  neighbor[0] not in visited:
+                    top_vertex.visited = True
+                    neighbor[0].visited = True
+
+                    depth.push(neighbor[0])
+
+        for node in self.__adj_list:
+            node.visited = False
+
+        return vertices
+
 
 
 
@@ -104,4 +132,4 @@ if __name__ == "__main__":
     g.add_edge(e, d)
     g.add_edge(e, c)
 
-    print(g.breadth_first(a))
+    print(g.Depth_first(b))
