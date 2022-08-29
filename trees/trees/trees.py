@@ -107,5 +107,5 @@ if __name__ == "__main__":
      Tree=BinarySearchTree()
      Tree.add(9)
 
-     print(Tree.contains(9))
+     # print(Tree.contains(9))
 
